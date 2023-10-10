@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const app = express();
 const URL = require("./url_model");
 require("dotenv").config();
-
+const cors = require('cors');
 const corsOptions = {
   origin: 'https://shortit-pp.netlify.app',
   methods: 'GET,POST',
