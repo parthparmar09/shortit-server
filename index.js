@@ -8,7 +8,7 @@ const corsOptions = {
   origin: 'https://shortit-pp.netlify.app',
   methods: 'GET,POST',
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use(express.json());
 //function to start the server
